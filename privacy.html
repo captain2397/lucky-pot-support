@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lucky Pot — Privacy Policy</title>
-<meta name="description" content="Privacy Policy for the Lucky Pot iOS game: what data is collected, why, who receives it, and how to make a request.">
+<meta name="description" content="Privacy Policy for the Lucky Pot iOS game: the app collects no data, stores game progress only on your device, and has no analytics, advertising or tracking.">
 <style>
   :root{
     --bg:#0d1f12;
@@ -66,124 +66,104 @@
 <header>
   <span class="badge">Lucky Pot</span>
   <h1>Privacy Policy</h1>
-  <p class="sub">Effective 7 August 2026 · Last updated 7 August 2026</p>
+  <p class="sub">Effective 8 August 2026 · Last updated 8 August 2026</p>
 </header>
 
 <div class="card">
-  <p style="margin-top:0">This policy explains what data the <strong>Lucky Pot</strong> iOS app collects, why it is collected, who receives it, and the choices you have. It applies to the Lucky Pot app for iPhone and iPad, bundle identifier <code>com.aditya.LuckyPot</code>.</p>
+  <p style="margin-top:0">This policy explains how the <strong>Lucky Pot</strong> iOS app handles data. It applies to the Lucky Pot app for iPhone and iPad, bundle identifier <code>org.berkeleycommunityscholars.luckypot</code>.</p>
   <p style="margin-bottom:0">Contact for all privacy questions and requests: <a href="mailto:akash.meena2300@gmail.com?subject=Lucky%20Pot%20Privacy%20Request">akash.meena2300@gmail.com</a></p>
 </div>
 
 <div class="card notice">
   <strong>Short version</strong>
-  <p style="margin-bottom:0">Lucky Pot has no accounts, no sign-in and no in-app purchases, and it never asks for your name, address, phone number or payment details. A third-party analytics SDK included in the app does generate a random device identifier and send app-usage events to its own server. We do not track you across other companies' apps or websites, and the app shows no advertising identifier prompt.</p>
+  <p style="margin-bottom:0">Lucky Pot does not collect or transmit data. Game progress and reward information are stored locally on the device using <code>UserDefaults</code>. The app has no accounts, analytics, advertising, tracking, in-app purchases, or external payment links. If a user contacts support by email, the email address and message are used only to respond.</p>
 </div>
 
 <h2>1. Data we collect</h2>
 <div class="card">
+  <p>We collect nothing. The app sends no data off your device, and there is no server that receives information about you or your play.</p>
   <div class="table-scroll">
   <table>
-    <tr><th>Data</th><th>What it is</th><th>Why</th></tr>
+    <tr><th>Data</th><th>What it is</th><th>Where it lives</th></tr>
     <tr>
-      <td><strong>Device identifier</strong></td>
-      <td>A random UUID generated on first launch and stored in the device Keychain. It is not your Apple ID, phone number, IDFA or hardware serial number.</td>
-      <td>App functionality: to recognise the same installation across sessions.</td>
+      <td><strong>Game progress</strong></td>
+      <td>Your level, virtual coin balance and related play state.</td>
+      <td>On your device only, in iOS <code>UserDefaults</code>. Never transmitted.</td>
     </tr>
     <tr>
-      <td><strong>Product interaction</strong></td>
-      <td>App-usage events such as launches, sessions and in-app actions.</td>
-      <td>App functionality and analytics.</td>
+      <td><strong>Reward information</strong></td>
+      <td>Your last daily-reward date and chest claim state, used to enforce one daily reward per calendar day.</td>
+      <td>On your device only, in iOS <code>UserDefaults</code>. Never transmitted.</td>
     </tr>
     <tr>
-      <td><strong>Virtual-item events</strong></td>
-      <td>Events relating to in-app virtual currency and virtual item interaction. Lucky Pot has no in-app purchases, so no real transaction, payment or billing data exists or is collected.</td>
-      <td>Analytics.</td>
-    </tr>
-    <tr>
-      <td><strong>Local game settings</strong></td>
-      <td>Your last daily-reward date, saved on your device with iOS <code>UserDefaults</code>.</td>
-      <td>App functionality: enforcing one daily reward per calendar day. This stays on your device and is not sent to us.</td>
-    </tr>
-    <tr>
-      <td><strong>Technical connection data</strong></td>
-      <td>Standard information sent by any internet request, such as IP address, and general device and OS information, received by the SDK server described in section 2.</td>
-      <td>Delivering the network request.</td>
+      <td><strong>Support email</strong></td>
+      <td>Only if you choose to email us: your email address and the contents of your message.</td>
+      <td>In our email inbox, used only to answer you.</td>
     </tr>
   </table>
   </div>
 </div>
 
-<h2>2. Third-party SDK</h2>
+<h2>2. No analytics, advertising or tracking</h2>
 <div class="card">
-  <p>Lucky Pot includes a third-party SDK named <strong>SessionTracker</strong>, supplied to us as a compiled library. It starts automatically when the app launches and:</p>
-  <ul>
-    <li>connects to its vendor server at <code>https://sessntrqplm.installsev.uk/</code>;</li>
-    <li>creates and stores a persistent random UUID in the device Keychain and sends it to that server as an <code>appsuid</code> parameter;</li>
-    <li>reports app-usage and virtual-currency events;</li>
-    <li>can display remotely supplied web content inside the app using a web view, and can receive configuration and content from its server.</li>
-  </ul>
-  <p style="margin-bottom:0">Data handled by this SDK is processed by its vendor under the vendor's own practices. We do not control that server and we do not receive a copy of the SDK's raw data. If you do not want this processing to occur, do not install or use the app; there is no in-app opt-out because the SDK exposes no on/off control to the app.</p>
+  <p style="margin-bottom:0">Lucky Pot contains no analytics SDK, no advertising SDK, no crash-reporting service and no tracking of any kind. No third party receives data from the app. The app makes no network requests to collect or report information about you or your use of the app.</p>
 </div>
 
 <h2>3. Data we do NOT collect</h2>
 <div class="card">
   <ul style="margin-bottom:0">
-    <li>No name, email address, postal address or phone number.</li>
-    <li>No payment, card or banking information — the app has no purchases of any kind.</li>
+    <li>No name, postal address or phone number. No email address unless you write to us yourself.</li>
+    <li>No device identifiers of any kind, including no UUID, no Keychain identifier and no advertising identifier (IDFA). The app presents no App Tracking Transparency prompt.</li>
+    <li>No payment, card or banking information — the app has no in-app purchases and no external purchase links.</li>
+    <li>No usage, product-interaction or event analytics.</li>
     <li>No precise or coarse location, contacts, photos, camera, microphone, calendar or health data.</li>
-    <li>No advertising identifier (IDFA). The app presents no App Tracking Transparency prompt.</li>
     <li>No tracking of you across apps or websites owned by other companies, and no sale or sharing of data for cross-context behavioural advertising.</li>
   </ul>
 </div>
 
-<h2>4. How we use data</h2>
+<h2>4. How data is used</h2>
 <div class="card">
-  <p style="margin-bottom:0">Data is used only to operate the app, keep your game state consistent on your device, understand aggregate app usage, and diagnose stability and quality problems. It is not used for advertising profiles, credit or insurance decisions, or automated decisions that legally affect you.</p>
+  <p style="margin-bottom:0">The information stored on your device is used only to run the game and keep your progress consistent between sessions. If you email support, your message is used only to respond to you. Nothing is used for advertising profiles, credit or insurance decisions, or automated decisions that legally affect you.</p>
 </div>
 
 <h2>5. Sharing</h2>
 <div class="card">
-  <p style="margin-bottom:0">We do not sell your data and we do not share it for advertising. Data leaves the app only to the SDK vendor server described in section 2, or where we are legally required to disclose information in response to a valid legal request.</p>
+  <p style="margin-bottom:0">We do not sell, share or disclose your data. There is no data to share: nothing leaves your device. Support email correspondence is not shared with anyone except where we are legally required to disclose it in response to a valid legal request.</p>
 </div>
 
 <h2>6. Retention and deletion</h2>
 <div class="card">
-  <p>Data stored on your device — game settings and the Keychain identifier — is removed when you delete the app. Deleting the app also resets your in-app progress.</p>
-  <p style="margin-bottom:0">Because there is no account, we hold no profile that we can look you up by name or email. To request deletion of any event data associated with your installation identifier, email <a href="mailto:akash.meena2300@gmail.com?subject=Lucky%20Pot%20Deletion%20Request">akash.meena2300@gmail.com</a> and we will forward the request to the SDK vendor and confirm the outcome to you.</p>
+  <p>Game progress and reward information are stored only on your device. Deleting the app removes them and resets your in-app progress. You do not need to contact us to delete this data, and we cannot access or recover it.</p>
+  <p style="margin-bottom:0">If you have emailed support, you can ask us to delete that correspondence at <a href="mailto:akash.meena2300@gmail.com?subject=Lucky%20Pot%20Deletion%20Request">akash.meena2300@gmail.com</a>.</p>
 </div>
 
 <h2>7. Your rights</h2>
 <div class="card">
-  <p>Depending on where you live, including the EEA and the UK (GDPR) and California (CCPA/CPRA), you may have the right to access, correct, delete or port your data, to object to or restrict processing, and to opt out of sale or sharing. We do not sell or share personal information as those laws define it.</p>
-  <p style="margin-bottom:0">Where GDPR applies, our legal basis is legitimate interest in operating and improving the app. Exercise any right by emailing <a href="mailto:akash.meena2300@gmail.com?subject=Lucky%20Pot%20Privacy%20Request">akash.meena2300@gmail.com</a>. We will respond within the period required by applicable law, and you may also complain to your local data protection authority.</p>
+  <p>Depending on where you live, including the EEA and the UK (GDPR) and California (CCPA/CPRA), you may have the right to access, correct, delete or port your data, to object to or restrict processing, and to opt out of sale or sharing. We do not sell or share personal information as those laws define it, and we hold no personal information about app users other than support email you send us.</p>
+  <p style="margin-bottom:0">Exercise any right by emailing <a href="mailto:akash.meena2300@gmail.com?subject=Lucky%20Pot%20Privacy%20Request">akash.meena2300@gmail.com</a>. We will respond within the period required by applicable law, and you may also complain to your local data protection authority.</p>
 </div>
 
 <h2>8. Children</h2>
 <div class="card">
-  <p style="margin-bottom:0">Lucky Pot simulates casino-style play, is intended for adults, and is not directed to children. We do not knowingly collect personal information from children. If you believe a child has provided information through the app, email us and we will delete what we can identify.</p>
+  <p style="margin-bottom:0">Lucky Pot simulates casino-style play, is intended for adults, and is not directed to children. The app collects no personal information from anyone, including children.</p>
 </div>
 
-<h2>9. International transfers</h2>
+<h2>9. Security</h2>
 <div class="card">
-  <p style="margin-bottom:0">The SDK vendor server described in section 2 may be located outside your country, so data may be transferred and processed abroad, including in countries whose data protection laws differ from those where you live.</p>
+  <p style="margin-bottom:0">Because the app transmits nothing, there is no transfer of your data to protect. Game data is stored in the app's own sandboxed storage on your device and is protected by iOS.</p>
 </div>
 
-<h2>10. Security</h2>
-<div class="card">
-  <p style="margin-bottom:0">The identifier described above is stored in the iOS Keychain, and network requests use HTTPS. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
-</div>
-
-<h2>11. Virtual coins</h2>
+<h2>10. Virtual coins</h2>
 <div class="card notice">
   <p style="margin-bottom:0"><strong>Virtual coins have no cash value and cannot be redeemed for money or prizes.</strong> They cannot be purchased, wagered, transferred or withdrawn, and they carry no financial value. Lucky Pot offers no real-money gambling.</p>
 </div>
 
-<h2>12. Changes to this policy</h2>
+<h2>11. Changes to this policy</h2>
 <div class="card">
   <p style="margin-bottom:0">We may update this policy as the app changes. The effective date at the top will change, and the current version is always published at this address. Continued use of the app after an update means you accept the revised policy.</p>
 </div>
 
-<h2>13. Contact</h2>
+<h2>12. Contact</h2>
 <div class="card">
   <p><a class="btn" href="mailto:akash.meena2300@gmail.com?subject=Lucky%20Pot%20Privacy%20Request">Email Privacy Requests</a>
      <a class="btn secondary" href="index.html">Support Page</a></p>
@@ -191,7 +171,7 @@
 </div>
 
 <footer>
-  <p class="meta">Lucky Pot · Version 1.0 · Last updated 7 August 2026<br>
+  <p class="meta">Lucky Pot · Version 1.0 · Last updated 8 August 2026<br>
   <a href="index.html">Support</a> · <a href="mailto:akash.meena2300@gmail.com">akash.meena2300@gmail.com</a></p>
 </footer>
 

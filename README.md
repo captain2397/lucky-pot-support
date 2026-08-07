@@ -10,9 +10,15 @@ used for the App Store Connect **Support URL** and **Privacy Policy URL** fields
 
 ## Keeping these accurate
 
-The privacy page describes the SessionTracker SDK currently linked into the app:
-a persistent Keychain UUID, app-usage events, and a remote web view served from
-the vendor domain. If that SDK is removed or replaced before submission, update
-section 2 of `privacy.html`, section 1's data table, and
-`Lucky Pot/PrivacyInfo.xcprivacy` in the app repository together so all three
-agree with the shipping binary.
+The privacy page states that the app collects and transmits nothing: game
+progress and reward state live only in on-device `UserDefaults`, and there is no
+analytics, advertising, tracking or third-party SDK data collection. It names
+bundle identifier `org.berkeleycommunityscholars.luckypot`.
+
+If any SDK, network call or identifier is added to the app, update
+`privacy.html` (short version, section 1's data table, sections 2 and 3),
+`Lucky Pot/PrivacyInfo.xcprivacy` in the app repository, and the App Store
+Connect App Privacy answers together so all three agree with the shipping
+binary. Apple requires these to stay accurate, including third-party code
+practices:
+https://developer.apple.com/help/app-store-connect/manage-app-information/manage-app-privacy
